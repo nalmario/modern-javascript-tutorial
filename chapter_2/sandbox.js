@@ -161,3 +161,20 @@ console.log(2); */
 // console.log(name > 'crystal'); // true, s comes later than c in the alphabet
 // console.log(name > 'Shaun'); // true, lowercase letters are greater than any uppercase letter
 // console.log(name > 'Crystal'); // true
+
+
+// loose comparison (diff types can still be equal)
+// let age = 25
+// console.log(age == 25)
+// console.log(age == '25'); // string is converted to number first bts
+// console.log(age != 25);
+// console.log(age != '25');
+
+// strict comparison (diff types cannot be equal, no type conversion bts)
+// console.log(age === 25);
+// console.log(age === '25');
+// console.log(age !== 25);
+// console.log(age !== '25');
+
+
+
