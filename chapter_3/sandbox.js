@@ -84,7 +84,7 @@
 // console.log(!false);
 
 
-// break and continue
+// // break and continue
 // const scores = [50,25,0,30,100,20,10];
 
 // for(let i = 0; i <  scores.length; i++){
@@ -101,3 +101,29 @@
 //   }
 
 // }
+
+
+// // switch statements
+// const grade = 'P';
+
+// switch(grade){
+//   case 'A':
+//     console.log('you got an A!');
+//     break;
+//   case 'B':
+//     console.log('you got a B!');
+//     break;
+//   case 'C':
+//     console.log('you got a C!');
+//     break;
+//   case 'D':
+//     console.log('you got a D!');
+//     break;
+//   case 'E':
+//     console.log('you got an E!');
+//     break;
+//   default:
+//     console.log('not a valid grade');
+// }
+
+
