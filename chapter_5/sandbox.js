@@ -48,35 +48,53 @@
 
 
 // // objects in arrays
-const blogs = [
-  { title: 'why mac and cheese rules', likes: 30 },
-  { title: '10 things to make with marmite', likes: 50 }
-];
+// const blogs = [
+//   { title: 'why mac and cheese rules', likes: 30 },
+//   { title: '10 things to make with marmite', likes: 50 }
+// ];
 
 // console.log(blogs);
 
-let user = {
-  name: 'crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'berlin',
-  blogs: [
-    { title: 'why mac and cheese rules', likes: 30 },
-    { title: '10 things to make with marmite', likes: 50 }
-  ],
-  login(){
-    console.log('the user logged in');
-  },
-  logout(){
-    console.log('the user logged out');
-  },
-  logBlogs(){
-    // console.log(this.blogs)
-    console.log('this user has written the following blogs:')
-    this.blogs.forEach(blog => {
-      console.log(blog.title, blog.likes);
-    })
-  }
-};
+// let user = {
+//   name: 'crystal',
+//   age: 30,
+//   email: 'crystal@thenetninja.co.uk',
+//   location: 'berlin',
+//   blogs: [
+//     { title: 'why mac and cheese rules', likes: 30 },
+//     { title: '10 things to make with marmite', likes: 50 }
+//   ],
+//   login(){
+//     console.log('the user logged in');
+//   },
+//   logout(){
+//     console.log('the user logged out');
+//   },
+//   logBlogs(){
+//     // console.log(this.blogs)
+//     console.log('this user has written the following blogs:')
+//     this.blogs.forEach(blog => {
+//       console.log(blog.title, blog.likes);
+//     })
+//   }
+// };
 
-user.logBlogs();
+// user.logBlogs();
+
+
+// // Math object
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+
+const area = 7.7;
+
+console.log(Math.round(area)); // round to closest whole
+console.log(Math.floor(area)); // floor it to whole number
+console.log(Math.ceil(area)); // raise it to whole number
+console.log(Math.trunc(area)); // takes away decimal, leaves integer
+
+// random number gen
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random * 100)) // will generate random number between 1 and 100
