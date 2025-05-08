@@ -81,3 +81,17 @@
 // const name = 'shaun';
 // let resultTwo = name.toUpperCase();
 // console.log(resultTwo);
+
+
+// // callbacks & foreach
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+const logPerson = (person, index) => {
+  console.log(`${index} - hello, ${person}`);
+};
+
+people.forEach(logPerson);
+
+// people.forEach((person, index) => {
+//   console.log(index, person);
+// });
