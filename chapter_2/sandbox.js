@@ -111,4 +111,25 @@ console.log(2); */
 // console.log(html);
 
 
-//
+// // arrays
+// let ninjas = ['shaun', 'ryu', 'chun-li'];
+
+// ninjas[1] = 'ken'; // array override per position
+// console.log(ninjas[1]);
+
+// let ages = [20,25,30,35];
+// console.log(ages[2])
+
+// let random = ['shaun', 'crystal', 30, 20];
+// console.log(random);
+
+// console.log(ninjas.length);
+
+// array methods
+// let result = ninjas.join(','); // joins array into string, seperated by comma
+// let result = ninjas.indexOf('chun-li');
+// let result = ninjas.concat(['ken', 'crystal']); // adds array to end of ninjas array
+// let result = ninjas.push('ken'); // returns length of the array, adds item 'ken'
+// let result = ninjas.pop(); // removes last item in array, returns the removed item
+// console.log(ninjas);
+
