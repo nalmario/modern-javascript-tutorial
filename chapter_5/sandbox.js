@@ -21,12 +21,49 @@
 
 
 // // object methods and 'this'
+// let user = {
+//   name: 'crystal',
+//   age: 30,
+//   email: 'crystal@thenetninja.co.uk',
+//   location: 'berlin',
+//   blogs: ['why mac and cheese rules', '10 things to make with marmite'],
+//   login(){
+//     console.log('the user logged in');
+//   },
+//   logout(){
+//     console.log('the user logged out');
+//   },
+//   logBlogs(){
+//     // console.log(this.blogs)
+//     console.log('this user has written the following blogs:')
+//     this.blogs.forEach(blog => {
+//       console.log(blog);
+//     })
+//   }
+// };
+
+// // user.login();
+// // user.logout();
+// user.logBlogs();
+
+
+// // objects in arrays
+const blogs = [
+  { title: 'why mac and cheese rules', likes: 30 },
+  { title: '10 things to make with marmite', likes: 50 }
+];
+
+// console.log(blogs);
+
 let user = {
   name: 'crystal',
   age: 30,
   email: 'crystal@thenetninja.co.uk',
   location: 'berlin',
-  blogs: ['why mac and cheese rules', '10 things to make with marmite'],
+  blogs: [
+    { title: 'why mac and cheese rules', likes: 30 },
+    { title: '10 things to make with marmite', likes: 50 }
+  ],
   login(){
     console.log('the user logged in');
   },
@@ -37,11 +74,9 @@ let user = {
     // console.log(this.blogs)
     console.log('this user has written the following blogs:')
     this.blogs.forEach(blog => {
-      console.log(blog);
+      console.log(blog.title, blog.likes);
     })
   }
 };
 
-// user.login();
-// user.logout();
 user.logBlogs();
