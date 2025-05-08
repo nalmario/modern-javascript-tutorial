@@ -177,4 +177,22 @@ console.log(2); */
 // console.log(age !== '25');
 
 
+// type conversion
+// let score = '100';
+// score = Number(score);
+// console.log(score + 1);
+// console.log(typeof score);
 
+// let result = Number('hello');
+// console.log(result); // NaN
+
+// let result = String(50);
+// console.log(result, typeof result);
+
+// positive and negative numbers are "truthy", 0 is "falsey"
+// let result = Boolean(100);
+// console.log(result, typeof result);
+
+// empty strings are "falsey", else "truthey"
+// let result = Boolean('100');
+// console.log(result, typeof result);
