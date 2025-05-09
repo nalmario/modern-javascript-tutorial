@@ -51,13 +51,27 @@
 // })
 
 
-// get and set attributes
-const link = document.querySelector('a'); // anchor tag
-console.log(link.getAttribute('href')); // gets the attribute we want, href in this case
-link.setAttribute('href', 'https://www.thenetninja.co.uk'); // setAttribute('attribute to change', 'what to change it to')
-link.innerText = 'The Net Ninja Website'
+// // get and set attributes
+// const link = document.querySelector('a'); // anchor tag
+// console.log(link.getAttribute('href')); // gets the attribute we want, href in this case
+// link.setAttribute('href', 'https://www.thenetninja.co.uk'); // setAttribute('attribute to change', 'what to change it to')
+// link.innerText = 'The Net Ninja Website'
 
-const mssg = document.querySelector('p');
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class', 'success');
-mssg.setAttribute('style', 'color: green;'); // can also apply new attributes to tags
+// const mssg = document.querySelector('p');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
+// mssg.setAttribute('style', 'color: green;'); // can also apply new attributes to tags
+
+
+// attribute setting when one is already in place
+const title = document.querySelector('h1');
+
+// title.setAttribute('style', 'margin: 50px'); // this will overwrite an already defined attribute
+
+console.log(title.style);
+console.log(title.style.color);
+
+title.style.margin = '50px';
+title.style.color = 'crimson';
+title.style.fontSize = '60px';
+title.style.margin = ''; // deletes or removes the property
