@@ -63,15 +63,18 @@
 // mssg.setAttribute('style', 'color: green;'); // can also apply new attributes to tags
 
 
-// attribute setting when one is already in place
-const title = document.querySelector('h1');
+// // attribute setting when one is already in place
+// const title = document.querySelector('h1');
 
-// title.setAttribute('style', 'margin: 50px'); // this will overwrite an already defined attribute
+// // title.setAttribute('style', 'margin: 50px'); // this will overwrite an already defined attribute
 
-console.log(title.style);
-console.log(title.style.color);
+// console.log(title.style);
+// console.log(title.style.color);
 
-title.style.margin = '50px';
-title.style.color = 'crimson';
-title.style.fontSize = '60px';
-title.style.margin = ''; // deletes or removes the property
+// title.style.margin = '50px';
+// title.style.color = 'crimson';
+// title.style.fontSize = '60px';
+// title.style.margin = ''; // deletes or removes the property
+
+
+// // adding and removing classes from elements
