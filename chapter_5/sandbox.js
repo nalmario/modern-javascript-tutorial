@@ -83,18 +83,35 @@
 
 
 // // Math object
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-const area = 7.7;
+// const area = 7.7;
 
-console.log(Math.round(area)); // round to closest whole
-console.log(Math.floor(area)); // floor it to whole number
-console.log(Math.ceil(area)); // raise it to whole number
-console.log(Math.trunc(area)); // takes away decimal, leaves integer
+// console.log(Math.round(area)); // round to closest whole
+// console.log(Math.floor(area)); // floor it to whole number
+// console.log(Math.ceil(area)); // raise it to whole number
+// console.log(Math.trunc(area)); // takes away decimal, leaves integer
 
-// random number gen
-const random = Math.random();
-console.log(random);
-console.log(Math.round(random * 100)) // will generate random number between 1 and 100
+// // random number gen
+// const random = Math.random();
+// console.log(random);
+// console.log(Math.round(random * 100)) // will generate random number between 1 and 100
+
+
+// // primitive values
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`); // changing scoreOne doesn't affect scoreTwo in the stack
+
+// // reference values
+const userOne = { name: `ryu`, age: 30 };
+const userTwo = userOne;
+console.log(userOne, userTwo);
+
+userOne.name = 'chun-li';
+console.log(userOne, userTwo); // both variables are changed because it points to the same object in heap memory
