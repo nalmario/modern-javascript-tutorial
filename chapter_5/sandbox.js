@@ -109,9 +109,9 @@
 // console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`); // changing scoreOne doesn't affect scoreTwo in the stack
 
 // // reference values
-const userOne = { name: `ryu`, age: 30 };
-const userTwo = userOne;
-console.log(userOne, userTwo);
+// const userOne = { name: `ryu`, age: 30 };
+// const userTwo = userOne;
+// console.log(userOne, userTwo);
 
-userOne.name = 'chun-li';
-console.log(userOne, userTwo); // both variables are changed because it points to the same object in heap memory
+// userOne.name = 'chun-li';
+// console.log(userOne, userTwo); // both variables are changed because it points to the same object in heap memory
