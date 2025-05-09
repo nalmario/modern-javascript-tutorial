@@ -49,3 +49,15 @@
 // people.forEach(person => {
 //   content.innerHTML += `<p>${person}</p>`
 // })
+
+
+// get and set attributes
+const link = document.querySelector('a'); // anchor tag
+console.log(link.getAttribute('href')); // gets the attribute we want, href in this case
+link.setAttribute('href', 'https://www.thenetninja.co.uk'); // setAttribute('attribute to change', 'what to change it to')
+link.innerText = 'The Net Ninja Website'
+
+const mssg = document.querySelector('p');
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success');
+mssg.setAttribute('style', 'color: green;'); // can also apply new attributes to tags
