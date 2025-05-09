@@ -78,3 +78,25 @@
 
 
 // // adding and removing classes from elements
+// const content = document.querySelector('p');
+// console.log(content.classList); // gets a list of all classes the element has
+// content.classList.add('error'); // add a class to element
+// content.classList.remove('error'); // remove class from element
+// content.classList.add('success');
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(p => {
+  // console.log(p.textContent); // textContent gets all text content, even ones that are not visible
+
+  if(p.textContent.includes('error')){
+    p.classList.add('error');
+  } else if (p.innerText.includes('success')) {
+    p.classList.add('success');
+  }
+});
+
+// // toggling a class
+const title = document.querySelector('.title');
+title.classList.toggle('test'); // will give element the class if it doesn't have it and vice versa
+title.classList.toggle('test');
